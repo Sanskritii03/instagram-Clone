@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.create-button {
+  border: 1px solid rgb(233, 16, 222);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 15px;
+  font-family: cursive;
+  font-size: larger;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #f5160a;
+  box-shadow: 2px 2.4px #0c9ace;
+  color: #d5ce0b;
+}

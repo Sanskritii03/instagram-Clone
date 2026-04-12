@@ -1,0 +1,27 @@
+.button {
+    border: 1px solid rebeccapurple;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 15px;
+    font-family: cursive;
+    background-color: #493030;
+    color: #f1cfcf;
+    font-size: larger;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &.primary-button {
+        background-color: #613636;
+        box-shadow: 2px 2.4px #281919;
+        color: #f8c0c0;
+
+    }
+
+    &:active {
+        transform: scale(0.9);
+        background-color: #d68282;
+        box-shadow: 2px 2.4px #dc1111;
+        color: #b90909;
+    }
+}

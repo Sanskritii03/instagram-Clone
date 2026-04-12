@@ -1,0 +1,61 @@
+@mixin flex-colummn($gap: 0rem) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+.form-container {
+  height: fit-content;
+  min-width: 400px;
+  @include flex-colummn(1rem);
+
+  cursor: auto;
+  min-width: 300px;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+  }
+
+  form {
+    @include flex-colummn(1rem);
+
+    input
+     {
+      border: none;
+      outline: none;
+      padding-inline: 1.5rem;
+      padding-block: 1rem;
+      border-radius: 10px;
+      background: #151313;
+      font-family: sans-serif;
+      color: bisque;
+           border: 1px solid rebeccapurple;
+           box-shadow: 3px 5px rgb(109, 91, 132);
+
+    }
+
+   
+  }
+
+  .toggleAuthForm {
+    cursor: pointer;
+    color: rgb(30, 136, 136);
+    text-decoration: none;
+  }
+}
